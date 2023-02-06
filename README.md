@@ -179,6 +179,48 @@ VStack(spacing: 20) {
 
 </details>
 
+<details>
+  <summary>Wave</summary>
+
+`Wave` shape and `.waved` modifier is used to draw animated wave:
+
+- upside-waved variant:
+
+<p align="left">
+<img src="Gifs/UpsideWave.gif" alt="UpsideWave" width="280">
+</p>
+
+- inside-waved variant: 
+
+<p align="left">
+<img src="Gifs/InsideWave.gif" alt="InsideWave" width="280">
+</p>
+
+- no wave, classical variant: 
+
+<p align="left">
+<img src="Gifs/NoWave.gif" alt="NoWave" width="280">
+</p>
+
+Use such way:
+                     
+```swift
+HStack {
+    ...
+    /* Buttons */
+    ...
+}
+.background(
+    Color.black.opacity(0.8)
+        .waved(corner: cornerRadius,
+               height: waveHeight,
+               startX: waveX,
+               length: waveLength)
+)
+```
+
+</details>
+
 ## Communication
 
 - If you like this repository, please do :star: to make this useful for others.
