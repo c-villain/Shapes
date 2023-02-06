@@ -87,7 +87,7 @@ public struct CornerRadiusModifier_Previews: PreviewProvider {
                     Color.orange
                         .cornerRadius(20, corners: .lefts)
                 )
-            
+
             Text("Corner radius modifier")
                 .foregroundColor(.black)
                 .padding(16)
