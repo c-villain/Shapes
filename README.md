@@ -61,11 +61,11 @@ There are different custom shapes provided by `Shapes`.
 `RoundedRectangle` shape and `.cornerRadius` modifier is used to round specific corners:
 
 <p align="left">
-<img src="Pics/CornerRadius.png" alt="corner radius">
+<img src="Pics/CornerRadius.png" alt="corner radius" width="280">
 </p>
 
 <p align="left">
-<img src="Gifs/CornerRadius.gif" alt="corner radius">
+<img src="Gifs/CornerRadius.gif" alt="corner radius" width="280">
 </p>
 
 Use such way:
@@ -80,7 +80,7 @@ RoundedRectangle(topLeft: 0,
 If you have radiuses on one side that larger than half of height or half of width: 
 
 <p align="left">
-<img src="Pics/CornerRadius_pr2.png" alt="corner radius">
+<img src="Pics/CornerRadius_pr2.png" alt="corner radius" width="280">
 </p>
 
 then use chain of modifiers:
@@ -104,14 +104,14 @@ Text("Corner radius modifier")
 `Bubble` shape and `.bubble` modifier is used to draw messages or tips:
 
 <p align="left">
-<img src="Gifs/Bubble.gif" alt="Bubble">
+<img src="Gifs/Bubble.gif" alt="Bubble" width="280">
 </p>
 
 
 Use such way:
 
 <p align="left">
-<img src="Pics/Bubble.png" alt="Bubble">
+<img src="Pics/Bubble.png" alt="Bubble" width="280">
 </p>
 
 
@@ -148,7 +148,7 @@ VStack {
 or via modifier:
 
 <p align="left">
-<img src="Pics/Bubble_pr2.png" alt="Bubble">
+<img src="Pics/Bubble_pr2.png" alt="Bubble" width="280">
 </p>
 
 ```swift
