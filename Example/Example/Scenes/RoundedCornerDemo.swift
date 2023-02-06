@@ -26,25 +26,25 @@ struct RoundedDemo: View {
                 VStack {
                     HStack {
                         Text("Top left: \(Int(topLeft))")
-                        Slider(value: $topLeft, in: 0...70)
+                        Slider(value: $topLeft, in: 0...100)
                             .accentColor(.yellow)
                     }
                     
                     HStack {
                         Text("Top right: \(Int(topRight))")
-                        Slider(value: $topRight, in: 0...70)
+                        Slider(value: $topRight, in: 0...100)
                             .accentColor(.yellow)
                     }
                     
                     HStack {
                         Text("Bottom left: \(Int(bottomLeft))")
-                        Slider(value: $bottomLeft, in: 0...70)
+                        Slider(value: $bottomLeft, in: 0...100)
                             .accentColor(.yellow)
                     }
                     
                     HStack {
                         Text("Bottom right: \(Int(bottomRight))")
-                        Slider(value: $bottomRight, in: 0...70)
+                        Slider(value: $bottomRight, in: 0...100)
                             .accentColor(.yellow)
                     }
                 }

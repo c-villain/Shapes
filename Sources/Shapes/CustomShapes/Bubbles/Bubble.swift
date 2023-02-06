@@ -37,3 +37,37 @@ public struct Bubble: Shape {
         }
     }
 }
+
+
+public struct Bubble_Previews: PreviewProvider {
+    public static var previews: some View {
+
+        VStack {
+            Text("Hi!")
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .background(
+                    Bubble.init(type: .send,
+                                cornerRadius: 20,
+                                tail: (width: 6, height: 15))
+                    .stroke(.gray, lineWidth: 2)
+                )
+                .frame(maxWidth: .infinity,
+                       alignment: .trailing)
+            
+            Text("Wassup!")
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+
+                .background(
+                    Bubble.init(type: .received,
+                                cornerRadius: 20,
+                                tail: (width: 6, height: 15))
+                    .stroke(.gray, lineWidth: 2)
+                )
+                .frame(maxWidth: .infinity,
+                       alignment: .leading)
+        }
+        .padding(20)
+    }
+}
