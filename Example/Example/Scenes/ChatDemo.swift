@@ -60,7 +60,7 @@ struct Chat: View {
                             .padding(16)
                             .received(chatConfig)
                         
-                        Text("That you've recommend recently✌🏻")
+                        Text("That you've recommended recently✌🏻")
                             .foregroundColor(chatConfig.foregroundColor)
                             .padding(16)
                             .received(chatConfig)
