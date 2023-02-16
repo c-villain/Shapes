@@ -22,6 +22,12 @@ struct DemoView: View {
                 }, label: {
                     Text("Rounded corners")
                 })
+                
+                NavigationLink(destination: {
+                    DiamondDemo()
+                }, label: {
+                    Text("Diamond")
+                })
             }
             .navigationBarTitle(Text("Menu"))
         }

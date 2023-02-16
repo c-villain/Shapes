@@ -15,6 +15,7 @@
 		5A159A56298D699700E5363E /* BubbleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A159A55298D699700E5363E /* BubbleDemo.swift */; };
 		5A159A58298D751900E5363E /* WaveDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A159A57298D751900E5363E /* WaveDemo.swift */; };
 		5A159A5A298D7A3000E5363E /* RoundedCornerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A159A59298D7A3000E5363E /* RoundedCornerDemo.swift */; };
+		5AEF4999299E870B00EC990B /* DiamondDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF4998299E870B00EC990B /* DiamondDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5A159A55298D699700E5363E /* BubbleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleDemo.swift; sourceTree = "<group>"; };
 		5A159A57298D751900E5363E /* WaveDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveDemo.swift; sourceTree = "<group>"; };
 		5A159A59298D7A3000E5363E /* RoundedCornerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerDemo.swift; sourceTree = "<group>"; };
+		5AEF4998299E870B00EC990B /* DiamondDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				5A159A55298D699700E5363E /* BubbleDemo.swift */,
 				5A159A57298D751900E5363E /* WaveDemo.swift */,
 				5A159A59298D7A3000E5363E /* RoundedCornerDemo.swift */,
+				5AEF4998299E870B00EC990B /* DiamondDemo.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				5A159A56298D699700E5363E /* BubbleDemo.swift in Sources */,
 				5A159A4D298D5D2300E5363E /* DemoView.swift in Sources */,
 				5A159A3A298D5C9F00E5363E /* SceneDelegate.swift in Sources */,
+				5AEF4999299E870B00EC990B /* DiamondDemo.swift in Sources */,
 				5A159A58298D751900E5363E /* WaveDemo.swift in Sources */,
 				5A159A5A298D7A3000E5363E /* RoundedCornerDemo.swift in Sources */,
 			);

@@ -53,3 +53,9 @@ struct RoundedDemo: View {
         }
     }
 }
+
+public struct RoundedDemo_Previews: PreviewProvider {
+    public static var previews: some View {
+        RoundedDemo()
+    }
+}
