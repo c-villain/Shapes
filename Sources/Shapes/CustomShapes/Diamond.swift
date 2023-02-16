@@ -28,7 +28,15 @@ public struct Diamond: Shape {
 
 public struct Diamond_Previews: PreviewProvider {
     public static var previews: some View {
-        VStack {
+        VStack(spacing: 40) {
+            Text("Diamond")
+                .padding(.horizontal, 24)
+                .padding(.vertical, 16)
+                .background(
+                    Diamond()
+                        .stroke(.blue, lineWidth: 2)
+                )
+            
             Diamond()
                 .stroke(.gray, lineWidth: 1)
                 .frame(width: 100, height: 50)

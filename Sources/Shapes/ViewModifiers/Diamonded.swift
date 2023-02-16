@@ -33,10 +33,21 @@ public extension View {
 public struct DiamondedModifier_Previews: PreviewProvider {
     public static var previews: some View {
         
-        Text("Diamonded modifier")
-            .foregroundColor(.black)
-            .padding(16)
-            .diamond(withStroke: Color.orange,
-                       fill: .blue)
+        VStack(spacing: 40) {
+            Text("Diamond modifier")
+                .foregroundColor(.black)
+                .padding(24)
+                .diamond(top: .init(x: 40, y: 0),
+                         bottom: .init(x: 0, y: 0),
+                         withStroke: .black,
+                         lineWidth: 2.0,
+                         fill: .yellow)
+            
+            Text("Diamond modifier")
+                .foregroundColor(.black)
+                .padding(16)
+                .diamond(withStroke: Color.orange,
+                         fill: .blue)
+        }
     }
 }
