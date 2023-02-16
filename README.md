@@ -225,6 +225,52 @@ HStack {
 
 </details>
 
+<details>
+  <summary>Diamond</summary>
+
+`Diamond` shape and `.diamond` modifier is used to draw rhombuses or quadrangles:
+
+<p align="left">
+<img src="Gifs/Diamond.gif" alt="Diamond" width="280">
+</p>
+
+
+Use such way:
+
+<p align="left">
+<img src="Pics/Diamond.png" alt="Bubble" width="280">
+</p>
+
+```swift
+Text("Diamond")
+    .padding(.horizontal, 24)
+    .padding(.vertical, 16)
+    .background(
+        Diamond()
+            .stroke(.blue, lineWidth: 2)
+    )
+```
+
+or via modifier:
+
+<p align="left">
+<img src="Pics/Diamond_pr2.png" alt="Bubble" width="280">
+</p>
+
+```swift
+Text("Diamond modifier")
+    .foregroundColor(.black)
+    .padding(24)
+    .diamond(top: .init(x: 40, y: 0),
+             bottom: .init(x: 0, y: 0),
+             withStroke: .black,
+             lineWidth: 2.0,
+             fill: .yellow)
+```
+
+</details>
+
+
 ## Communication
 
 - If you like this repository, please do :star: to make this useful for others.
