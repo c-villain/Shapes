@@ -3,11 +3,23 @@ import SwiftUI
 public struct RoundedRectangle: Shape {
 
     // corner radiuses:
-    var topLeft: CGFloat = 0
-    var topRight: CGFloat = 0
-    var bottomLeft: CGFloat = 0
-    var bottomRight: CGFloat = 0
+    var topLeft: CGFloat
+    var topRight: CGFloat
+    var bottomLeft: CGFloat
+    var bottomRight: CGFloat
 
+    public init(
+        topLeft: CGFloat = 0,
+        topRight: CGFloat = 0,
+        bottomLeft: CGFloat = 0,
+        bottomRight: CGFloat = 0
+    ) {
+        self.topLeft = topLeft
+        self.topRight = topRight
+        self.bottomLeft = bottomLeft
+        self.bottomRight = bottomRight
+    }
+    
     public func path(in rect: CGRect) -> Path {
 
         Path { path in

@@ -2,12 +2,24 @@ import SwiftUI
 
 public struct Wave: Shape {
     
-    var corner: CGFloat = 0 // for corner radius
-    var height: CGFloat = 25 // height of wave
+    var corner: CGFloat // for corner radius
+    var height: CGFloat // height of wave
     
     //for wave:
-    var startX: CGFloat = 180
-    var length: CGFloat = 120
+    var startX: CGFloat
+    var length: CGFloat
+    
+    public init(
+        corner: CGFloat = 0,
+        height: CGFloat = 25,
+        startX: CGFloat = 180,
+        length: CGFloat = 120
+    ) {
+        self.corner = corner
+        self.height = height
+        self.startX = startX
+        self.length = length
+    }
     
     public var animatableData: CGFloat {
         get { startX }
