@@ -2,8 +2,16 @@ import SwiftUI
 
 public struct Diamond: Shape {
     
-    var top: CGPoint = .init(x: 0, y: 0)
-    var bottom: CGPoint = .init(x: 0, y: 0)
+    var top: CGPoint
+    var bottom: CGPoint
+    
+    public init(
+        top: CGPoint = .init(x: 0, y: 0),
+        bottom: CGPoint = .init(x: 0, y: 0)
+    ) {
+        self.top = top
+        self.bottom = bottom
+    }
     
     public func path(in rect: CGRect) -> Path {
         Path { path in

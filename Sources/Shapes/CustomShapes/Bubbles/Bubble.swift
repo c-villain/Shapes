@@ -12,11 +12,23 @@ public enum TailPosition {
 
 public struct Bubble: Shape {
     
-    var type: MessageType = .send
-    var cornerRadius: CGFloat = 0.0
+    var type: MessageType
+    var cornerRadius: CGFloat
     
-    var tail: (width: CGFloat, height: CGFloat) = (6, 17)
-    var tailPosition: TailPosition = .bottom
+    var tail: (width: CGFloat, height: CGFloat)
+    var tailPosition: TailPosition
+    
+    public init(
+        type: MessageType = .send,
+        cornerRadius: CGFloat = 0.0,
+        tail: (width: CGFloat, height: CGFloat) = (6, 17),
+        tailPosition: TailPosition = .bottom
+    ) {
+        self.type = type
+        self.cornerRadius = cornerRadius
+        self.tail = tail
+        self.tailPosition = tailPosition
+    }
     
     public func path(in rect: CGRect) -> Path {
         switch (type, tailPosition) {
